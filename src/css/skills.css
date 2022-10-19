@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* height: 85vh; */
+    height: 100%;
+    background-color: rgb(205, 255, 247);
+}
+.ski{
+    width: 24rem;
+    box-sizing: border-box;
+    margin: 0 3rem;
+    /* background-color: red; */
+}
+.skills-desc{
+    width: 24rem;
+    margin: 0 3rem;
+    /* margin-right: 5rem; */
+    /* background-color: green; */
+}
+.percentbar{
+    background-color: #ffffff;
+    width: 23rem;
+    height: .6rem;
+}
+.frontendpercent{
+    background-color: rgb(255, 126, 66);
+    width: 75%;
+    height: .6rem;
+    animation: fp 1.6s ;
+}
+@keyframes fp {
+    0%{
+        background-color: rgb(255, 126, 66);
+        width: 0%;
+        
+    }
+    100%{
+        background-color: rgb(255, 126, 66);
+        width: 75%;
+    }
+}
+.backendpercent{
+    background-color: rgb(255, 126, 66);
+    width: 30%;
+    height: .6rem;
+    animation: bp 1.6s ;
+}
+@keyframes bp {
+    0%{
+        background-color: rgb(255, 126, 66);
+        width: 0%;
+        
+    }
+    100%{
+        background-color: rgb(255, 126, 66);
+        width: 30%;
+    }
+}
+.reactpercent{
+    background-color: rgb(255, 126, 66);
+    width: 50%;
+    height: .6rem;
+    animation: rp 1.6s ;
+}
+@keyframes rp {
+    0%{
+        background-color: rgb(255, 126, 66);
+        width: 0%;
+        
+    }
+    100%{
+        background-color: rgb(255, 126, 66);
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .skills{
+        flex-direction: column-reverse;
+    }
+    .ski{
+        margin: 1rem 0;
+    }
+    .skills-desc{
+        margin: 1rem 0;
+    }
+}

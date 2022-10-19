@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about{
+    background: cyan;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+}
+.photo{
+    width: 24rem;
+    height: 17rem;
+    margin: 0 4rem;
+    background-color: red;
+}
+.about-desc{
+    width: 23rem;
+    margin: 0 4rem;
+    /* margin-right: 5rem; */
+    /* background-color: green; */
+}
+@media screen and (max-width:420px) {
+    .about{
+        flex-direction: column;
+    }
+    .photo{
+        margin: 2rem 0;
+    }
+    .about-desc{
+        margin: 2rem 0;
+    }
+}

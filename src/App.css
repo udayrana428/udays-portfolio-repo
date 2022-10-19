@@ -1,0 +1,92 @@
+.projects-footer{
+    background-color: black;
+    color: white;
+}
+.page-header{
+    border: 3px solid black;
+}
+.backcolor{
+    /* background-image: linear-gradient(to left, #858b93, #91a2a8, #a1b9b7, #b9cfc2, #dce3cb); */
+}
+
+.contact-page{
+    background-image: linear-gradient(to left bottom, #817de5, #9187e3, #9f92e0, #ab9dde, #b6a9dc);
+}
+.left{
+    background-image: linear-gradient(to left, #051937, #0e162c, #121322, #111119, #0e0e0e);
+}
+.I{
+    color: #C5C6C7;
+}
+.name{
+    color: #66FCF1;
+    font-size: 3rem;
+    transition: transform 4s  ease-in;
+    animation: abc 1s  ease-in ;
+}
+@keyframes abc {
+    
+    from{
+        transform:translateX(20%) scaleX(.5);
+    }
+    
+}
+.name:hover{
+
+    transform: rotateX(360deg) translateX(5rem);
+}
+
+.work{
+    color: #C5C6C7;
+    
+}
+.connectus{
+    color: #66FCF1;
+}
+.social a i{
+    font-size: 30px;
+
+}
+.social a i:hover{
+    /* color: #66FCF1; */
+    font-size: 40px;
+    color: white;
+    transition: all .2s ease-in;
+}
+.right{
+    background-image: linear-gradient(to right, #051937, #0e162c, #121322, #111119, #0e0e0e);
+    /* background-image: url("https://www.pngfind.com/pngs/b/60-600927_person-png.png" ) ; */
+}
+@media(max-width:500px){
+    .backcolor{
+        background-image: none;
+        flex-direction: column;
+        
+    }
+    .left{
+        /* width: 2344px; */
+        
+    }
+    .left-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right{
+        
+    
+    }
+    .right img{
+        display: none;
+    }
+}
+/* position: absolute;
+width: 440.01px;
+height: 246.41px;
+right: -149.98px;
+top: -139px;
+
+background: rgba(0, 0, 0, 0.09);
+transform: rotate(34.61deg); */
